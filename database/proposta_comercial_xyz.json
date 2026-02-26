@@ -1,0 +1,153 @@
+{
+  "id": "proposta-comercial-xyz",
+  "nome": "Processo de Elaboracao de Proposta Comercial - Cliente XYZ",
+  "area": "Comercial",
+  "data": "Fevereiro de 2026",
+  "versao": "1.0",
+  "elaborado_por": "Adriano Sales",
+  "responsavel_nome": "Mariana Oliveira",
+  "responsavel_cargo": "Gerente de Planejamento Comercial",
+  "total_etapas": 16,
+  "areas_envolvidas": [
+    "Planejamento Comercial",
+    "Desenvolvimento de Negocios",
+    "Vendas",
+    "Engenharia de Solucoes",
+    "Gerenciamento de Projetos",
+    "Financeiro",
+    "Marketing e Comunicacao",
+    "Juridico",
+    "Comite de Aprovacao",
+    "Customer Success e Operacoes"
+  ],
+  "etapas": [
+    {
+      "numero": 1,
+      "titulo": "Planejamento e Estrategia Inicial",
+      "area": "Planejamento Comercial",
+      "responsavel": "Mariana Oliveira",
+      "cargo": "Gerente de Planejamento Comercial",
+      "descricao": "A equipe de planejamento analisa o historico do cliente XYZ, define os objetivos da proposta e estabelece as diretrizes estrategicas. Sao levantadas informacoes sobre mercado, concorrentes e oportunidades de negocio. A equipe define escopo preliminar, prazos e orcamento estimado."
+    },
+    {
+      "numero": 2,
+      "titulo": "Prospeccao e Qualificacao do Cliente",
+      "area": "Desenvolvimento de Negocios",
+      "responsavel": "Ricardo Santos",
+      "cargo": "Coordenador de Desenvolvimento de Negocios",
+      "descricao": "O time realiza pesquisa detalhada sobre o cliente XYZ, identificando suas dores, necessidades especificas, capacidade de investimento e tomadores de decisao. Esta qualificacao determina se o cliente possui fit com as solucoes oferecidas e se ha potencial real de fechamento."
+    },
+    {
+      "numero": 3,
+      "titulo": "Reuniao de Descoberta Discovery",
+      "area": "Vendas",
+      "responsavel": "Juliana Costa",
+      "cargo": "Executiva de Contas",
+      "descricao": "A executiva agenda e conduz reuniao com stakeholders do cliente XYZ para mapear desafios, expectativas, objetivos de negocio e requisitos tecnicos. Sao coletadas informacoes criticas que servirao de base para personalizacao da proposta comercial."
+    },
+    {
+      "numero": 4,
+      "titulo": "Analise de Requisitos e Viabilidade",
+      "area": "Engenharia de Solucoes",
+      "responsavel": "Andre Mendes",
+      "cargo": "Engenheiro de Solucoes",
+      "descricao": "A equipe tecnica analisa os requisitos levantados e avalia a viabilidade tecnica e operacional da solucao proposta. Sao identificados recursos necessarios, tecnologias aplicaveis, integracoes requeridas e possiveis limitacoes."
+    },
+    {
+      "numero": 5,
+      "titulo": "Elaboracao do Escopo Detalhado",
+      "area": "Gerenciamento de Projetos",
+      "responsavel": "Paula Ferreira",
+      "cargo": "Gerente de Projetos",
+      "descricao": "Com base nas informacoes coletadas, a gerente elabora o escopo detalhado da solucao: produtos ou servicos, metodologia de implementacao, cronograma preliminar, marcos e criterios de aceite. O escopo e documentado de forma clara para facilitar o entendimento do cliente."
+    },
+    {
+      "numero": 6,
+      "titulo": "Precificacao e Modelagem Financeira",
+      "area": "Financeiro",
+      "responsavel": "Carlos Almeida",
+      "cargo": "Analista Financeiro",
+      "descricao": "O time financeiro desenvolve a modelagem de custos, margem de lucro, condicoes de pagamento e opcoes de investimento. Sao considerados custos diretos e indiretos, impostos, riscos financeiros e flexibilidade para negociacao."
+    },
+    {
+      "numero": 7,
+      "titulo": "Desenvolvimento de Proposta Tecnica",
+      "area": "Engenharia de Solucoes",
+      "responsavel": "Fernanda Lima",
+      "cargo": "Analista de Solucoes",
+      "descricao": "A analista desenvolve a parte tecnica da proposta, detalhando arquitetura da solucao, especificacoes tecnicas, diagramas, fluxos de trabalho e recursos tecnologicos envolvidos. Esta secao demonstra a expertise tecnica da empresa."
+    },
+    {
+      "numero": 8,
+      "titulo": "Redacao e Formatacao da Proposta",
+      "area": "Marketing e Comunicacao",
+      "responsavel": "Beatriz Rodrigues",
+      "cargo": "Analista de Comunicacao",
+      "descricao": "A equipe redige o documento da proposta comercial seguindo as melhores praticas de persuasao e clareza, incluindo introducao personalizada, apresentacao da empresa, diagnostico da situacao, solucao proposta, beneficios, investimento, cronograma e termos."
+    },
+    {
+      "numero": 9,
+      "titulo": "Revisao Juridica e Compliance",
+      "area": "Juridico",
+      "responsavel": "Roberto Silva",
+      "cargo": "Analista Juridico",
+      "descricao": "O departamento juridico revisa todos os termos contratuais, clausulas de garantia, SLAs, propriedade intelectual, confidencialidade e aspectos legais da proposta, garantindo conformidade legal e protecao dos interesses da empresa."
+    },
+    {
+      "numero": 10,
+      "titulo": "Aprovacao Interna Multidisciplinar",
+      "area": "Comite de Aprovacao",
+      "responsavel": "Luciana Barros",
+      "cargo": "Diretora Comercial",
+      "descricao": "A proposta passa por comite envolvendo representantes de vendas, engenharia, financeiro, juridico e direcao. Cada area valida seus componentes e a diretora comercial faz a aprovacao final. Eventuais ajustes sao implementados antes do envio."
+    },
+    {
+      "numero": 11,
+      "titulo": "Preparacao da Apresentacao Executiva",
+      "area": "Vendas",
+      "responsavel": "Juliana Costa",
+      "cargo": "Executiva de Contas",
+      "descricao": "A executiva prepara apresentacao em slides para acompanhar a proposta comercial, destacando pontos de valor, diferenciais competitivos e ROI esperado. Serve como material de apoio para reuniao de apresentacao ao cliente XYZ."
+    },
+    {
+      "numero": 12,
+      "titulo": "Envio e Apresentacao da Proposta",
+      "area": "Vendas",
+      "responsavel": "Juliana Costa",
+      "cargo": "Executiva de Contas",
+      "descricao": "A proposta e enviada formalmente ao cliente via e-mail ou plataforma digital, acompanhada de carta de apresentacao. Em seguida, e agendada reuniao onde a executiva explica cada secao, esclarece duvidas e reforca os beneficios da solucao."
+    },
+    {
+      "numero": 13,
+      "titulo": "Acompanhamento e Negociacao",
+      "area": "Vendas",
+      "responsavel": "Juliana Costa",
+      "cargo": "Executiva de Contas",
+      "descricao": "Apos o envio, a executiva mantem contato ativo com o cliente para acompanhar a analise da proposta, responder questionamentos, fornecer informacoes adicionais e conduzir negociacoes de ajustes de escopo, prazos ou valores."
+    },
+    {
+      "numero": 14,
+      "titulo": "Revisao e Ajustes da Proposta",
+      "area": "Vendas e Engenharia de Solucoes",
+      "responsavel": "Juliana Costa e Andre Mendes",
+      "cargo": "Executiva de Contas e Engenheiro de Solucoes",
+      "descricao": "Com base no feedback do cliente durante a negociacao, sao realizados ajustes na proposta. Modificacoes de escopo, cronograma ou valores sao reavaliadas pelas areas tecnica e financeira antes de gerar nova versao do documento."
+    },
+    {
+      "numero": 15,
+      "titulo": "Fechamento e Formalizacao do Contrato",
+      "area": "Vendas e Juridico",
+      "responsavel": "Juliana Costa e Roberto Silva",
+      "cargo": "Executiva de Contas e Analista Juridico",
+      "descricao": "Uma vez aceita a proposta, inicia-se a formalizacao contratual. O juridico elabora o contrato definitivo, as partes negociam clausulas finais e o documento e assinado. O registro do contrato e feito no CRM e sistemas internos."
+    },
+    {
+      "numero": 16,
+      "titulo": "Handoff para Operacao e Entrega",
+      "area": "Customer Success e Operacoes",
+      "responsavel": "Camila Pereira",
+      "cargo": "Gerente de Customer Success",
+      "descricao": "Apos assinatura do contrato, a gerente de customer success assume o relacionamento. E realizada reuniao de kickoff com as equipes de implementacao, apresentando o escopo, expectativas, cronograma e pontos de atencao. Toda documentacao e transferida para a equipe de entrega."
+    }
+  ]
+}
