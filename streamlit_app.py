@@ -101,7 +101,7 @@ html_parts.append("<button class='car-btn car-left' onclick='scrollCar(-1)'>&#82
 html_parts.append("<div class='carousel-clip'><div class='carousel' id='qCarousel'>" + quick_cards_html + "</div></div>")
 html_parts.append("<button class='car-btn car-right' onclick='scrollCar(1)'>&#8250;</button>")
 html_parts.append("</div>")
-html_parts.append("</div></div>")
+html_parts.append("<div class='section-title' style='margin-top:28px;'>Últimos Processos</div>")
 html_parts.append("""
 <style>*,body,html{font-family:sans-serif !important;}
 body,html{margin:0;padding:0;box-sizing:border-box;width:100%;overflow-x:hidden}
