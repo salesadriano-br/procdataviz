@@ -105,7 +105,7 @@ html_parts.append("</div></div>")
 html_parts.append("""
 <style>*,body,html{font-family:sans-serif !important;}
 body,html{margin:0;padding:0;box-sizing:border-box;width:100%;overflow-x:hidden}
-.outer-wrap{display:flex;width:100%;background:#fff;min-height:80vh;padding-top:66px}
+.outer-wrap{display:flex;width:100%;max-width:1408px;background:#fff;min-height:80vh;padding-top:66px}
 .sidebar{width:260px;min-width:260px;background:#CAD0F6;padding:32px 20px 20px;border-radius:12px;margin-top:16px}
 .sidebar-title{font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:18px}
 .search-wrap{display:flex;gap:6px;margin-bottom:10px;align-items:center;}.search-btn{background:#004ad7;color:#fff;border:none;border-radius:8px;padding:8px 12px;font-size:16px;cursor:pointer;flex-shrink:0;}.search-input{flex:1;padding:8px 12px;border-radius:8px;border:1px solid #004ad7;font-size:14px;background:#ffffff;box-sizing:border-box}
@@ -145,7 +145,7 @@ components.html(html, height=750, scrolling=False)
 st.markdown("<div style='font-size:16px;font-weight:700;color:#1a1a2e;margin:24px 0 12px 0'>Ultimos Processos</div>", unsafe_allow_html=True)
 # Ultimos Processos - renderizado com components para suportar links
 proc_list_component_html = f"""
-<style>*,body,html{font-family:sans-serif !important;}
+<style>*,body,html{{font-family:sans-serif !important;}}
 .proc-item-wrap{{display:flex;flex-direction:column;gap:8px;background:#f8f9ff;border-radius:10px;padding:14px 18px;margin-bottom:12px}}
 .proc-header{{display:flex;align-items:center;justify-content:space-between;gap:12px}}
 .proc-name{{font-size:15px;font-weight:600;color:#1a1a2e;flex:1}}
