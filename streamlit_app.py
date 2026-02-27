@@ -105,7 +105,7 @@ html_parts.append("</div></div>")
 html_parts.append("""
 <style>*,body,html{font-family:sans-serif !important;}
 body,html{margin:0;padding:0;box-sizing:border-box;width:100%;overflow-x:hidden}
-.outer-wrap{display:flex;width:100%;max-width:1408px;background:#fff;min-height:80vh;padding-top:66px}
+.outer-wrap{display:flex;width:100%;max-width:1408px;margin:0 auto;background:#fff;min-height:80vh;padding-top:66px}
 .sidebar{width:260px;min-width:260px;background:#CAD0F6;padding:32px 20px 20px;border-radius:12px;margin-top:16px}
 .sidebar-title{font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:18px}
 .search-wrap{display:flex;gap:6px;margin-bottom:10px;align-items:center;}.search-btn{background:#004ad7;color:#fff;border:none;border-radius:8px;padding:8px 12px;font-size:16px;cursor:pointer;flex-shrink:0;}.search-input{flex:1;padding:8px 12px;border-radius:8px;border:1px solid #004ad7;font-size:14px;background:#ffffff;box-sizing:border-box}
