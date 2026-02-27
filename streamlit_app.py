@@ -139,8 +139,5 @@ function scrollCar(d){var c=document.getElementById('qCarousel');if(c)c.scrollLe
 document.addEventListener('click',function(e){var b=e.target.closest('.details-btn');if(b){var p=b.getAttribute('data-proc');if(p)window.parent.location.href=window.parent.location.origin+'/detalhes?proc='+p;}});
 </script>
 """)
-html_parts.append("<div class='ultimos-title'> Ultimos Processos</div>")
-html_parts.append(proc_items_html)
-html_parts.append("</div></div>")
 html = "".join(html_parts)
 components.html(html, height=900 + len(all_procs)*120, scrolling=True)
