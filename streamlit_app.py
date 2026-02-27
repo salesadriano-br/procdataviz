@@ -14,7 +14,7 @@ body { background-color: #ffffff !important; }
 .main { background-color: #ffffff !important; }
 [data-testid="stMainBlockContainer"] { padding-top: 1rem !important; padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 0 !important; max-width: 100% !important; background-color: #ffffff !important; }
 .block-container { padding-top: 1rem !important; padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 0 !important; max-width: 100% !important; overflow-x: hidden !important; background-color: #ffffff !important; }
-</style>
+.proc-item-wrap{display:flex;flex-direction:column;gap:8px;background:#fff;padding:8px 0;}.proc-header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:#f8f9ff;border-radius:10px;}.proc-info{display:flex;flex-direction:column;gap:4px;flex:1;}.p-name{font-size:15px;font-weight:600;color:#1a1a2e;}.p-area{font-size:13px;color:#555;}.proc-btn{background:#004ad7;color:#fff;border:none;border-radius:8px;padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer;text-decoration:none !important;display:inline-block;}.proc-btn:hover{background:#0035a0;}.ultimos-title{font-size:16px;font-weight:700;color:#1a1a2e;margin:24px 0 12px 0;}</style>
 """, unsafe_allow_html=True)
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "database")
@@ -139,20 +139,8 @@ function scrollCar(d){var c=document.getElementById('qCarousel');if(c)c.scrollLe
 document.addEventListener('click',function(e){var b=e.target.closest('.details-btn');if(b){var p=b.getAttribute('data-proc');if(p)window.parent.location.href=window.parent.location.origin+'/detalhes?proc='+p;}});
 </script>
 """)
-
+html_parts.append("<div class='ultimos-title'> Ultimos Processos</div>")
+html_parts.append(proc_items_html)
+html_parts.append("</div></div>")
 html = "".join(html_parts)
-components.html(html, height=750, scrolling=False)
-st.markdown("<div style='font-size:16px;font-weight:700;color:#1a1a2e;margin:24px 0 12px 0'>Ultimos Processos</div>", unsafe_allow_html=True)
-# Ultimos Processos - renderizado com components para suportar links
-proc_list_component_html = f"""
-<style>*,body,html{{font-family:sans-serif !important;}}
-.proc-item-wrap{{display:flex;flex-direction:column;gap:8px;background:#f8f9ff;border-radius:10px;padding:14px 18px;margin-bottom:12px}}
-.proc-header{{display:flex;align-items:center;justify-content:space-between;gap:12px}}
-.proc-name{{font-size:15px;font-weight:600;color:#1a1a2e;flex:1}}
-.proc-area{{font-size:13px;color:#555;margin-top:4px}}
-.proc-btn{{background:#004ad7;color:#fff;border:none;border-radius:8px;padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-block}}
-.proc-btn:hover{{background:#0035a0}}
-</style>
-{proc_items_html}
-"""
-components.html(proc_list_component_html, height=max(100, len(all_procs) * 95 + 20), scrolling=False)
+components.html(html, height=900 + len(all_procs)*120, scrolling=True)
