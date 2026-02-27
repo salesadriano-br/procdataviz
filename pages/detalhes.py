@@ -78,7 +78,7 @@ full_html = f"""
 <html>
 <head>
 <meta charset="utf-8">
-<style>*,body,html{font-family:sans-serif !important;}
+<style>*,body,html{{font-family:sans-serif !important;}}
 * {{ box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', 'Segoe UI', sans-serif; }}
 body {{ background: #fff; padding: 0; margin: 0; }}
 .header {{
