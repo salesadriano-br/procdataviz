@@ -111,7 +111,7 @@ body,html{margin:0;padding:0;box-sizing:border-box;width:100%;overflow-x:hidden}
 .search-wrap{display:flex;gap:6px;margin-bottom:10px;align-items:center;}.search-btn{background:#004ad7;color:#fff;border:none;border-radius:8px;padding:8px 12px;font-size:16px;cursor:pointer;flex-shrink:0;}.search-input{flex:1;padding:8px 12px;border-radius:8px;border:1px solid #004ad7;font-size:14px;background:#ffffff;box-sizing:border-box}
 .area-select{width:100%;padding:8px 12px;border-radius:8px;border:1px solid #004ad7;font-size:14px;margin-bottom:10px;background:#fff;color:#1a1a2e;}
 .filter-btn{width:100%;padding:8px 0;background:#004ad7;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer}
-.content{flex:1;padding:32px 40px}
+.content{flex:1;min-width:0;overflow:hidden;padding:32px 40px}
 .welcome-title{color:#0b5fff !important;font-size:26px;font-weight:700;margin-bottom:6px}
 .welcome-sub{color:#555;font-size:14px;margin-bottom:24px}
 .stats-row{display:flex;gap:16px;margin-bottom:28px}
@@ -119,7 +119,7 @@ body,html{margin:0;padding:0;box-sizing:border-box;width:100%;overflow-x:hidden}
 .stat-num{font-size:32px;font-weight:700;color:#004ad7}
 .stat-label{font-size:13px;color:#444}
 .section-title{font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:14px}
-.carousel-wrap{display:flex;align-items:center;margin-bottom:28px;width:100%;box-sizing:border-box;gap:8px}.carousel-clip{flex:1;min-width:0;overflow:hidden}
+.carousel-wrap{display:flex;align-items:center;margin-bottom:28px;width:100%;max-width:100%;box-sizing:border-box;gap:8px;overflow:hidden}.carousel-clip{flex:1;min-width:0;overflow:hidden}
 .carousel{display:flex;gap:14px;overflow:hidden;scroll-behavior:smooth}
 .quick-card{min-width:160px;max-width:160px;min-height:140px;background:#fff;border:1px solid #004ad7;border-radius:12px;padding:20px 14px;text-align:center;cursor:pointer;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
 .qc-icon{font-size:28px;display:block;margin-bottom:8px}
