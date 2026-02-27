@@ -7,7 +7,7 @@ st.set_page_config(page_title="Detalhes do Processo", layout="wide")
 
 # CSS para esconder elementos do Streamlit e garantir fundo branco
 st.markdown("""
-<style>
+<style>*,body,html{font-family:sans-serif !important;}
 [data-testid="stAppViewContainer"] { background-color: #ffffff !important; }
 [data-testid="stHeader"] { display: none !important; }
 [data-testid="stSidebarContent"] { background-color: #CAD0F6 !important; }
@@ -78,7 +78,7 @@ full_html = f"""
 <html>
 <head>
 <meta charset="utf-8">
-<style>
+<style>*,body,html{font-family:sans-serif !important;}
 * {{ box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', 'Segoe UI', sans-serif; }}
 body {{ background: #fff; padding: 0; margin: 0; }}
 .header {{

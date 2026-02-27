@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 st.set_page_config(page_title="Painel de Processos", layout="wide")
 
 st.markdown("""
-<style>
+<style>*,body,html{font-family:sans-serif !important;}
 [data-testid="stAppViewContainer"] { background-color: #ffffff !important; }
 [data-testid="stHeader"] { background-color: #CAD0F6 !important; height: 100px !important; padding-bottom: 20px !important; margin-bottom: 16px !important; }
 [data-testid="stSidebarContent"] { background-color: #CAD0F6 !important; }
@@ -97,14 +97,15 @@ html_parts.append("<span class='stat-label'><b>Total de Processos</b><br/>cadast
 html_parts.append("</div></div>")
 html_parts.append("<div class='section-title'>Busca Rapida</div>")
 html_parts.append("<div class='carousel-wrap'>")
-html_parts.append("<button class='car-btn' onclick='scrollCar(-1)'>&#8249;</button>")
-html_parts.append("<div class='carousel' id='qCarousel'>" + quick_cards_html + "</div>")
-html_parts.append("<button class='car-btn' onclick='scrollCar(1)'>&#8250;</button>")
+html_parts.append("<button class='car-btn car-left' onclick='scrollCar(-1)'>&#8249;</button>")
+html_parts.append("<div class='carousel-clip'><div class='carousel' id='qCarousel'>" + quick_cards_html + "</div></div>")
+html_parts.append("<button class='car-btn car-right' onclick='scrollCar(1)'>&#8250;</button>")
 html_parts.append("</div>")
 html_parts.append("</div></div>")
 html_parts.append("""
-<style>
-.outer-wrap{display:flex;max-width:1408px;margin:0 auto;background:#fff;min-height:80vh;padding-top:66px;overflow:hidden}
+<style>*,body,html{font-family:sans-serif !important;}
+body,html{margin:0;padding:0;box-sizing:border-box;width:100%;overflow-x:hidden}
+.outer-wrap{display:flex;width:100%;background:#fff;min-height:80vh;padding-top:66px}
 .sidebar{width:260px;min-width:260px;background:#CAD0F6;padding:32px 20px 20px;border-radius:12px;margin-top:16px}
 .sidebar-title{font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:18px}
 .search-wrap{display:flex;gap:6px;margin-bottom:10px;align-items:center;}.search-btn{background:#004ad7;color:#fff;border:none;border-radius:8px;padding:8px 12px;font-size:16px;cursor:pointer;flex-shrink:0;}.search-input{flex:1;padding:8px 12px;border-radius:8px;border:1px solid #004ad7;font-size:14px;background:#ffffff;box-sizing:border-box}
@@ -118,12 +119,12 @@ html_parts.append("""
 .stat-num{font-size:32px;font-weight:700;color:#004ad7}
 .stat-label{font-size:13px;color:#444}
 .section-title{font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:14px}
-.carousel-wrap{position:relative;display:flex;align-items:center;margin-bottom:28px;overflow:hidden;width:100%;box-sizing:border-box;max-width:100%}
-.carousel{display:flex;gap:14px;overflow:hidden;scroll-behavior:smooth;flex:1;min-width:0}
+.carousel-wrap{display:flex;align-items:center;margin-bottom:28px;width:100%;box-sizing:border-box;gap:8px}.carousel-clip{flex:1;min-width:0;overflow:hidden}
+.carousel{display:flex;gap:14px;overflow:hidden;scroll-behavior:smooth}
 .quick-card{min-width:160px;max-width:160px;min-height:140px;background:#fff;border:1px solid #004ad7;border-radius:12px;padding:20px 14px;text-align:center;cursor:pointer;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
 .qc-icon{font-size:28px;display:block;margin-bottom:8px}
 .qc-label{font-size:11px;color:#004ad7;font-weight:600;display:block;line-height:1.3}
-.car-btn{background:#004ad7;color:#fff;border:none;border-radius:50%;width:32px;height:32px;font-size:20px;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;z-index:2;margin:0 8px}
+.car-btn{flex-shrink:0;background:#004ad7;color:#fff;border:none;border-radius:50%;width:36px;height:36px;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;line-height:1;padding:0}.car-btn:hover{background:#0035a0}
 .proc-list{display:flex;flex-direction:column;gap:12px}
 .process-item{display:flex;flex-direction:column
 ;background:#f8f9ff;border-radius:10px;padding:14px 18px}
@@ -135,16 +136,16 @@ html_parts.append("""
 </style>
 <script>
 function scrollCar(d){var c=document.getElementById('qCarousel');if(c)c.scrollLeft+=d*260;}
-document.addEventListener('click',function(e){var b=e.target.closest('.details-btn');if(b){var p=b.getAttribute('data-proc');if(p)window.parent.location.href=window.location.origin+'/detalhes?proc='+p;}});
+document.addEventListener('click',function(e){var b=e.target.closest('.details-btn');if(b){var p=b.getAttribute('data-proc');if(p)window.parent.location.href=window.parent.location.origin+'/detalhes?proc='+p;}});
 </script>
 """)
 
 html = "".join(html_parts)
-st.markdown(html, unsafe_allow_html=True)
+components.html(html, height=750, scrolling=False)
 st.markdown("<div style='font-size:16px;font-weight:700;color:#1a1a2e;margin:24px 0 12px 0'>Ultimos Processos</div>", unsafe_allow_html=True)
 # Ultimos Processos - renderizado com components para suportar links
 proc_list_component_html = f"""
-<style>
+<style>*,body,html{font-family:sans-serif !important;}
 .proc-item-wrap{{display:flex;flex-direction:column;gap:8px;background:#f8f9ff;border-radius:10px;padding:14px 18px;margin-bottom:12px}}
 .proc-header{{display:flex;align-items:center;justify-content:space-between;gap:12px}}
 .proc-name{{font-size:15px;font-weight:600;color:#1a1a2e;flex:1}}
